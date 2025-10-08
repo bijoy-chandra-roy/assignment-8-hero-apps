@@ -5,15 +5,17 @@ import { FaGithub } from "react-icons/fa";
 const Navbar = () => {
   const pages = (
     <>
-      <li>
-        <a>Home</a>
-      </li>
-      <li>
-        <a>Apps</a>
-      </li>
-      <li>
-        <a>Installation</a>
-      </li>
+      <Link to="/home">
+        <li>Home</li>
+      </Link>
+
+      <Link to="/apps">
+        <li>Apps</li>
+      </Link>
+
+      <Link to="/installation">
+        <li>Installation</li>
+      </Link>
     </>
   );
 
@@ -46,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          <img src={logo} alt="" className="h-full"/>
+          <img src={logo} alt="" className="h-full" />
           HERO.IO
         </a>
       </div>
@@ -54,7 +56,11 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{pages}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">
+        <a
+          className="btn"
+          href="https://github.com/bijoy-chandra-roy"
+          target="blank"
+        >
           <FaGithub /> Contribute
         </a>
       </div>
