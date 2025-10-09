@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://picsum.photos/id/212/200/200",
+    "title": "Photo Gallery Pro",
+    "companyName": "Visual Innovators Inc.",
+    "id": 1,
+    "description": "A high-performance photo gallery app for organizing and editing your memories with smart AI features.",
+    "size": 75.3,
+    "reviews": "12.5K",
+    "ratingAvg": 4.6,
+    "downloads": "520K",
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": "1.5K" },
+      { "name": "4 star", "count": "4.8K" },
+      { "name": "5 star", "count": "5.6K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/111/200/200",
+    "title": "Fitness Tracker App",
+    "companyName": "Healthy Living Co.",
+    "id": 2,
+    "description": "Track your daily steps, monitor your workouts, and connect with friends to stay motivated and fit.",
+    "size": 42.1,
+    "reviews": "3.3K",
+    "ratingAvg": 4.8,
+    "downloads": "150K",
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 982 },
+      { "name": "5 star", "count": "2.1K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/343/200/200",
+    "title": "Cosmic Adventures Game",
+    "companyName": "Starlight Studios",
+    "id": 3,
+    "description": "An action-packed arcade game where you navigate through space, collecting stars and dodging meteors.",
+    "size": 150.8,
+    "reviews": "24K",
+    "ratingAvg": 3.9,
+    "downloads": "850K",
+    "ratings": [
+      { "name": "1 star", "count": "2.5K" },
+      { "name": "2 star", "count": "3.1K" },
+      { "name": "3 star", "count": "6.5K" },
+      { "name": "4 star", "count": "7.8K" },
+      { "name": "5 star", "count": "4.1K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/405/200/200",
+    "title": "Budget Planner",
+    "companyName": "Financial Tools Ltd.",
+    "id": 4,
+    "description": "Manage your finances effortlessly. Track expenses, set budgets, and achieve your financial goals with ease.",
+    "size": 28.5,
+    "reviews": "5.7K",
+    "ratingAvg": 4.7,
+    "downloads": "310K",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": "2.1K" },
+      { "name": "5 star", "count": "3.1K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/312/200/200",
+    "title": "Meditation Oasis",
+    "companyName": "Calm Minds Inc.",
+    "id": 5,
+    "description": "Guided meditation sessions to reduce stress, improve focus, and find your inner peace. Customize your sessions.",
+    "size": 90.2,
+    "reviews": "9.9K",
+    "ratingAvg": 4.9,
+    "downloads": "480K",
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": "1.5K" },
+      { "name": "5 star", "count": "8.2K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/88/200/200",
+    "title": "Recipe Finder",
+    "companyName": "Gourmet Apps",
+    "id": 6,
+    "description": "Discover thousands of recipes for every occasion. Filter by ingredients, cuisine, and dietary needs.",
+    "size": 60.0,
+    "reviews": "8.5K",
+    "ratingAvg": 4.5,
+    "downloads": "280K",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": "3.5K" },
+      { "name": "5 star", "count": "3.8K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/400/200/200",
+    "title": "Weather Live",
+    "companyName": "ClimaTech Systems",
+    "id": 7,
+    "description": "Get real-time weather forecasts, radar maps, and severe weather alerts for your current location.",
+    "size": 35.6,
+    "reviews": "21K",
+    "ratingAvg": 4.4,
+    "downloads": "1.1M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": "2.5K" },
+      { "name": "4 star", "count": "8.2K" },
+      { "name": "5 star", "count": "9K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/234/200/200",
+    "title": "Language Learner",
+    "companyName": "Lingua Masters",
+    "id": 8,
+    "description": "Learn a new language with interactive lessons, vocabulary builders, and quizzes. Supports multiple languages.",
+    "size": 88.9,
+    "reviews": "15K",
+    "ratingAvg": 4.7,
+    "downloads": "600K",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": "5.3K" },
+      { "name": "5 star", "count": "9K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/29/200/200",
+    "title": "Productivity Hub",
+    "companyName": "Synergy Software",
+    "id": 9,
+    "description": "An all-in-one productivity app with task management, a calendar, and project collaboration features.",
+    "size": 55.0,
+    "reviews": "7.5K",
+    "ratingAvg": 4.3,
+    "downloads": "250K",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": "1.1K" },
+      { "name": "4 star", "count": "3K" },
+      { "name": "5 star", "count": "2.9K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/350/200/200",
+    "title": "Music Mixer",
+    "companyName": "Audio Creations",
+    "id": 10,
+    "description": "Create, mix, and share your own music tracks with a wide range of instruments and sound effects.",
+    "size": 180.5,
+    "reviews": "11.2K",
+    "ratingAvg": 4.6,
+    "downloads": "410K",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": "1.2K" },
+      { "name": "4 star", "count": "4.3K" },
+      { "name": "5 star", "count": "5K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/222/200/200",
+    "title": "Home Decorator",
+    "companyName": "Design Studios",
+    "id": 11,
+    "description": "Visualize how new furniture and paint colors will look in your home using augmented reality.",
+    "size": 95.0,
+    "reviews": "4.3K",
+    "ratingAvg": 1,
+    "downloads": "180K",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": "2K" },
+      { "name": "5 star", "count": "1.4K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/60/200/200",
+    "title": "Travel Buddy",
+    "companyName": "Wanderlust Apps",
+    "id": 12,
+    "description": "Plan your next adventure with a comprehensive travel planner, including itineraries, maps, and tips.",
+    "size": 70.1,
+    "reviews": "18K",
+    "ratingAvg": 5,
+    "downloads": "750K",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": "5.6K" },
+      { "name": "5 star", "count": "12K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/287/200/200",
+    "title": "Puzzle Mania",
+    "companyName": "Brainy Games Ltd.",
+    "id": 13,
+    "description": "A collection of challenging and mind-bending puzzles to test your logic and problem-solving skills.",
+    "size": 50.4,
+    "reviews": "9.9K",
+    "ratingAvg": 4.1,
+    "downloads": "350K",
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": "1.8K" },
+      { "name": "4 star", "count": "4K" },
+      { "name": "5 star", "count": "3.3K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/115/200/200",
+    "title": "Cooking Master",
+    "companyName": "Tasty Creations",
+    "id": 14,
+    "description": "Learn to cook like a pro with video tutorials, step-by-step guides, and a list of your favorite recipes.",
+    "size": 85.7,
+    "reviews": "14.5K",
+    "ratingAvg": 4.5,
+    "downloads": "680K",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": "1.5K" },
+      { "name": "4 star", "count": "6.5K" },
+      { "name": "5 star", "count": "6K" }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/44/200/200",
+    "title": "Book Reader",
+    "companyName": "Literary Labs",
+    "id": 15,
+    "description": "A feature-rich ebook reader with a customizable interface, note-taking, and cloud sync.",
+    "size": 38.2,
+    "reviews": "6.5K",
+    "ratingAvg": 4.7,
+    "downloads": "300K",
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": "2K" },
+      { "name": "5 star", "count": "4K" }
+    ]
+  }
+]

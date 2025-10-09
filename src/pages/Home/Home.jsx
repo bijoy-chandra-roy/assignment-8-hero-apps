@@ -1,11 +1,18 @@
-import React from 'react';
+import { useLoaderData } from "react-router";
+import Banner from "../../components/Banner";
+import Stats from "../../components/Stats";
+import TreandingApps from "../../components/TreandingApps";
+
 
 const Home = () => {
-    return (
-        <div>
-            <h2>Home</h2>
-        </div>
-    );
+  const data = useLoaderData();
+  return (
+    <div className="text-center">
+      <Banner></Banner>
+      <Stats></Stats>
+      <TreandingApps data={data}></TreandingApps>
+    </div>
+  );
 };
 
 export default Home;
