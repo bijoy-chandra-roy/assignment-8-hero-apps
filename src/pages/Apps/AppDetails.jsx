@@ -3,6 +3,18 @@ import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
+import {
+  BarChart,
+  Bar,
+  Rectangle,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import { getInstalledApps, addToInstalledApps } from "../../utilities/installApp";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -37,13 +49,44 @@ const AppDetails = () => {
               <strong>{singleApp.reviews}</strong>
             </div>
           </div>
-          <button className="bg-[#00D390] text-white py-4 px-5 w-60 cursor-pointer active:scale-95 transition-transform duration-100">
+          <button onClick={() => {addToInstalledApps(singleApp.id)}} className="bg-[#00D390] text-white py-4 px-5 w-60 cursor-pointer active:scale-95 transition-transform duration-100">
             Install Now ({singleApp.size} MB)
           </button>
         </div>
       </div>
       <hr className="my-10" />
-      <div></div>
+      <div>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart
+            data={[...singleApp.ratings].reverse().map((rating) => ({
+              name: rating.name,
+              count:
+                typeof rating.count === "string"
+                  ? rating.count.includes("M")
+                    ? parseFloat(rating.count.replace("M", "")) * 1000000
+                    : parseFloat(rating.count.replace("K", "")) * 1000
+                  : rating.count,
+            }))}
+            layout="vertical"
+            // margin={{
+            //   top: 5,
+            //   right: 30,
+            //   left: 60,
+            //   bottom: 5,
+            // }}
+          >
+            <CartesianGrid strokeDasharray="0" stroke="transparent" />
+            <XAxis
+              type="number"
+              domain={[0, 12000]}
+              ticks={[0, 3000, 6000, 9000, 12000]}
+            />
+            <YAxis dataKey="name" type="category" />
+            <Tooltip />
+            <Bar dataKey="count" fill="#FF9500" />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
       <hr className="my-10" />
       <div>
         <h2>Description</h2>
