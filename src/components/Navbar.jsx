@@ -15,7 +15,7 @@ const Navbar = () => {
       </NavLink>
 
       <NavLink to="/installation" className="menu menu-horizontal px-1">
-        <li>Installation</li>
+        <li> Installation</li>
       </NavLink>
     </>
   );
