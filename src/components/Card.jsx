@@ -10,7 +10,6 @@ const Card = ({ eachApp }) => {
       </figure>
       <div className="card-body px-0">
         <h2 className="card-title">{eachApp.title}</h2>
-        <p>{eachApp.description}</p>
         <div className="card-actions justify-between">
           <div className="badge badge-outline text-[#00D390] bg-[#F1F5E8] rounded-[4px] border-none">
             <MdOutlineFileDownload />

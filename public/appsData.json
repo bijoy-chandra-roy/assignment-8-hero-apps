@@ -1,9 +1,9 @@
 [
   {
+    "id": 1,
     "image": "https://picsum.photos/id/212/200/200",
     "title": "Photo Gallery Pro",
     "companyName": "Visual Innovators Inc.",
-    "id": 1,
     "description": "A high-performance photo gallery app for organizing and editing your memories with smart AI features.",
     "size": 75.3,
     "reviews": "12.5K",
@@ -18,10 +18,10 @@
     ]
   },
   {
+    "id": 2,
     "image": "https://picsum.photos/id/111/200/200",
     "title": "Fitness Tracker App",
     "companyName": "Healthy Living Co.",
-    "id": 2,
     "description": "Track your daily steps, monitor your workouts, and connect with friends to stay motivated and fit.",
     "size": 42.1,
     "reviews": "3.3K",
@@ -36,10 +36,10 @@
     ]
   },
   {
+    "id": 3,
     "image": "https://picsum.photos/id/343/200/200",
     "title": "Cosmic Adventures Game",
     "companyName": "Starlight Studios",
-    "id": 3,
     "description": "An action-packed arcade game where you navigate through space, collecting stars and dodging meteors.",
     "size": 150.8,
     "reviews": "24K",
@@ -54,10 +54,10 @@
     ]
   },
   {
+    "id": 4,
     "image": "https://picsum.photos/id/405/200/200",
     "title": "Budget Planner",
     "companyName": "Financial Tools Ltd.",
-    "id": 4,
     "description": "Manage your finances effortlessly. Track expenses, set budgets, and achieve your financial goals with ease.",
     "size": 28.5,
     "reviews": "5.7K",
@@ -72,10 +72,10 @@
     ]
   },
   {
+    "id": 5,
     "image": "https://picsum.photos/id/312/200/200",
     "title": "Meditation Oasis",
     "companyName": "Calm Minds Inc.",
-    "id": 5,
     "description": "Guided meditation sessions to reduce stress, improve focus, and find your inner peace. Customize your sessions.",
     "size": 90.2,
     "reviews": "9.9K",
@@ -90,10 +90,10 @@
     ]
   },
   {
+    "id": 6,
     "image": "https://picsum.photos/id/88/200/200",
     "title": "Recipe Finder",
     "companyName": "Gourmet Apps",
-    "id": 6,
     "description": "Discover thousands of recipes for every occasion. Filter by ingredients, cuisine, and dietary needs.",
     "size": 60.0,
     "reviews": "8.5K",
@@ -108,10 +108,10 @@
     ]
   },
   {
+    "id": 7,
     "image": "https://picsum.photos/id/400/200/200",
     "title": "Weather Live",
     "companyName": "ClimaTech Systems",
-    "id": 7,
     "description": "Get real-time weather forecasts, radar maps, and severe weather alerts for your current location.",
     "size": 35.6,
     "reviews": "21K",
@@ -126,10 +126,10 @@
     ]
   },
   {
+    "id": 8,
     "image": "https://picsum.photos/id/234/200/200",
     "title": "Language Learner",
     "companyName": "Lingua Masters",
-    "id": 8,
     "description": "Learn a new language with interactive lessons, vocabulary builders, and quizzes. Supports multiple languages.",
     "size": 88.9,
     "reviews": "15K",
@@ -144,10 +144,10 @@
     ]
   },
   {
+    "id": 9,
     "image": "https://picsum.photos/id/29/200/200",
     "title": "Productivity Hub",
     "companyName": "Synergy Software",
-    "id": 9,
     "description": "An all-in-one productivity app with task management, a calendar, and project collaboration features.",
     "size": 55.0,
     "reviews": "7.5K",
@@ -162,10 +162,10 @@
     ]
   },
   {
+    "id": 10,
     "image": "https://picsum.photos/id/350/200/200",
     "title": "Music Mixer",
     "companyName": "Audio Creations",
-    "id": 10,
     "description": "Create, mix, and share your own music tracks with a wide range of instruments and sound effects.",
     "size": 180.5,
     "reviews": "11.2K",
@@ -180,10 +180,10 @@
     ]
   },
   {
+    "id": 11,
     "image": "https://picsum.photos/id/222/200/200",
     "title": "Home Decorator",
     "companyName": "Design Studios",
-    "id": 11,
     "description": "Visualize how new furniture and paint colors will look in your home using augmented reality.",
     "size": 95.0,
     "reviews": "4.3K",
@@ -198,10 +198,10 @@
     ]
   },
   {
+    "id": 12,
     "image": "https://picsum.photos/id/60/200/200",
     "title": "Travel Buddy",
     "companyName": "Wanderlust Apps",
-    "id": 12,
     "description": "Plan your next adventure with a comprehensive travel planner, including itineraries, maps, and tips.",
     "size": 70.1,
     "reviews": "18K",
@@ -216,10 +216,10 @@
     ]
   },
   {
+    "id": 13,
     "image": "https://picsum.photos/id/287/200/200",
     "title": "Puzzle Mania",
     "companyName": "Brainy Games Ltd.",
-    "id": 13,
     "description": "A collection of challenging and mind-bending puzzles to test your logic and problem-solving skills.",
     "size": 50.4,
     "reviews": "9.9K",
@@ -234,10 +234,10 @@
     ]
   },
   {
+    "id": 14,
     "image": "https://picsum.photos/id/115/200/200",
     "title": "Cooking Master",
     "companyName": "Tasty Creations",
-    "id": 14,
     "description": "Learn to cook like a pro with video tutorials, step-by-step guides, and a list of your favorite recipes.",
     "size": 85.7,
     "reviews": "14.5K",
@@ -252,10 +252,10 @@
     ]
   },
   {
+    "id": 15,
     "image": "https://picsum.photos/id/44/200/200",
     "title": "Book Reader",
     "companyName": "Literary Labs",
-    "id": 15,
     "description": "A feature-rich ebook reader with a customizable interface, note-taking, and cloud sync.",
     "size": 38.2,
     "reviews": "6.5K",
@@ -267,6 +267,96 @@
       { "name": "3 star", "count": 310 },
       { "name": "4 star", "count": "2K" },
       { "name": "5 star", "count": "4K" }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://picsum.photos/id/16/200/200",
+    "title": "News Aggregator",
+    "companyName": "InfoStream Media",
+    "description": "Stay updated with the latest news from multiple sources, personalized feeds, and offline reading.",
+    "size": 45.7,
+    "reviews": "10.2K",
+    "ratingAvg": 4.4,
+    "downloads": "420K",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": "1.2K" },
+      { "name": "4 star", "count": "4K" },
+      { "name": "5 star", "count": "4.2K" }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://picsum.photos/id/17/200/200",
+    "title": "Habit Builder",
+    "companyName": "Daily Routines Inc.",
+    "description": "Build positive habits with reminders, progress tracking, and motivational quotes to keep you on track.",
+    "size": 32.4,
+    "reviews": "4.8K",
+    "ratingAvg": 4.7,
+    "downloads": "210K",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": "1.5K" },
+      { "name": "5 star", "count": "2.8K" }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://picsum.photos/id/18/200/200",
+    "title": "Virtual Pet Simulator",
+    "companyName": "Fun Pets Games",
+    "description": "Adopt and care for virtual pets, play mini-games, and customize their habitats in this fun simulator.",
+    "size": 120.5,
+    "reviews": "15.3K",
+    "ratingAvg": 4.2,
+    "downloads": "650K",
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": "3K" },
+      { "name": "4 star", "count": "5.5K" },
+      { "name": "5 star", "count": "5.4K" }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://picsum.photos/id/19/200/200",
+    "title": "Stock Market Tracker",
+    "companyName": "Finance Insights",
+    "description": "Monitor stock prices, analyze trends, and get alerts for market changes with real-time data.",
+    "size": 48.9,
+    "reviews": "7.1K",
+    "ratingAvg": 4.5,
+    "downloads": "290K",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": "2.5K" },
+      { "name": "5 star", "count": "3.5K" }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://picsum.photos/id/20/200/200",
+    "title": "Yoga Instructor",
+    "companyName": "Zen Flow Studios",
+    "description": "Follow along with yoga classes for all levels, track your progress, and achieve better flexibility.",
+    "size": 65.2,
+    "reviews": "8.9K",
+    "ratingAvg": 4.8,
+    "downloads": "370K",
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": "2.6K" },
+      { "name": "5 star", "count": "6K" }
     ]
   }
 ]

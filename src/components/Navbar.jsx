@@ -48,7 +48,7 @@ const Navbar = () => {
             {pages}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
+        <a className="btn btn-ghost text-xl" href="/">
           <img src={logo} alt="" className="h-full" />
           HERO.IO
         </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <a
-          className="btn"
+          className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white"
           href="https://github.com/bijoy-chandra-roy"
           target="blank"
         >

@@ -7,11 +7,17 @@ const Banner = () => {
       <div className="hero">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Hello there</h1>
+            <h1 className="text-5xl font-bold">
+              We Build{" "}
+              <span className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                Productive
+              </span>{" "}
+              Apps
+            </h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              At HERO.IO, we craft innovative apps designed to make everyday
+              life simpler, smarter, and more exciting.Our goal is to turn your
+              ideas into digital experiences that truly make an impact.
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>
