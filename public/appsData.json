@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "https://picsum.photos/id/111/200/200",
+    "image": "/images/demo-app (3).webp",
     "title": "Fitness Tracker App",
     "companyName": "Healthy Living Co.",
     "description": "Track your daily steps, monitor your workouts, and connect with friends to stay motivated and fit.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "https://picsum.photos/id/405/200/200",
+    "image": "/images/demo-app (5).webp",
     "title": "Budget Planner",
     "companyName": "Financial Tools Ltd.",
     "description": "Manage your finances effortlessly. Track expenses, set budgets, and achieve your financial goals with ease.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "https://picsum.photos/id/312/200/200",
+    "image": "/images/demo-app (2).webp",
     "title": "Meditation Oasis",
     "companyName": "Calm Minds Inc.",
     "description": "Guided meditation sessions to reduce stress, improve focus, and find your inner peace. Customize your sessions.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "https://picsum.photos/id/234/200/200",
+    "image": "/images/demo-app (6).webp",
     "title": "Language Learner",
     "companyName": "Lingua Masters",
     "description": "Learn a new language with interactive lessons, vocabulary builders, and quizzes. Supports multiple languages.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "image": "https://picsum.photos/id/60/200/200",
+    "image": "/images/demo-app (1).webp",
     "title": "Travel Buddy",
     "companyName": "Wanderlust Apps",
     "description": "Plan your next adventure with a comprehensive travel planner, including itineraries, maps, and tips.",
@@ -343,7 +343,7 @@
   },
   {
     "id": 20,
-    "image": "https://picsum.photos/id/20/200/200",
+    "image": "/images/demo-app (4).webp",
     "title": "Yoga Instructor",
     "companyName": "Zen Flow Studios",
     "description": "Follow along with yoga classes for all levels, track your progress, and achieve better flexibility.",
