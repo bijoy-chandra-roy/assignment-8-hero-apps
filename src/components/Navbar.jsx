@@ -6,18 +6,49 @@ import { Link, NavLink } from "react-router";
 const Navbar = () => {
   const pages = (
     <>
-      <NavLink to="/" className="menu menu-horizontal px-1">
-        <li>Home</li>
-      </NavLink>
+  <NavLink to="/" className="menu menu-horizontal px-1">
+    {({ isActive }) => (
+      <li
+        className={`text-[16px] font-medium ${
+          isActive
+            ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3]"
+            : "text-[#000000]"
+        }`}
+      >
+        Home
+      </li>
+    )}
+  </NavLink>
 
-      <NavLink to="/apps" className="menu menu-horizontal px-1">
-        <li>Apps</li>
-      </NavLink>
+  <NavLink to="/apps" className="menu menu-horizontal px-1">
+    {({ isActive }) => (
+      <li
+        className={`text-[16px] font-medium ${
+          isActive
+            ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3]"
+            : "text-[#000000]"
+        }`}
+      >
+        Apps
+      </li>
+    )}
+  </NavLink>
 
-      <NavLink to="/installation" className="menu menu-horizontal px-1">
-        <li> Installation</li>
-      </NavLink>
-    </>
+  <NavLink to="/installation" className="menu menu-horizontal px-1">
+    {({ isActive }) => (
+      <li
+        className={`text-[16px] font-medium ${
+          isActive
+            ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3]"
+            : "text-[#000000]"
+        }`}
+      >
+        Installation
+      </li>
+    )}
+  </NavLink>
+</>
+
   );
 
   return (

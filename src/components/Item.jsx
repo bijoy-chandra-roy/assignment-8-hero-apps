@@ -15,9 +15,9 @@ const Item = ({ eachApp }) => {
         </Suspense>
       </figure>
       <div className="card-body px-0">
-        <h2 className="card-title">{eachApp.title}</h2>
+        <h2 className="card-title text-[20px] font-medium text-[#001931]">{eachApp.title}</h2>
         <div className="card-actions">
-          <div className="badge text-[#00D390] border-none">
+          <div className="badge text-[#00D390] border-none px-0">
             <MdOutlineFileDownload />
             {eachApp.downloads}
           </div>

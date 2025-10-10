@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getInstalledApps } from "../../utilities/installApp";
-import List from './../../components/List';
+import List from "./../../components/List";
 
 const Installation = () => {
   const data = useLoaderData();
@@ -14,13 +14,17 @@ const Installation = () => {
     setInstalledAppsList(myInstalledApps);
   }, []);
   return (
-    <div className="text-center mx-20">
+    <div className="text-center m-20">
       <div>
-        <h1>Your Installed Apps</h1>
-        <p>Explore All Trending Apps on the Market developed by us</p>
+        <h1 className="text-[48px] font-bold text-[#001931]">
+          Your Installed Apps
+        </h1>
+        <p className="text-[20px] font-normal text-[#627382]">
+          Explore All Trending Apps on the Market developed by us
+        </p>
       </div>
       <div className="flex justify-between">
-        <div className="">
+        <div className="text-[24px] font-semibold text-[#001931]">
           <p>({installedAppsList.length}) Apps Found</p>
         </div>
         <select className="select">

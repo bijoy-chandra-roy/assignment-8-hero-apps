@@ -14,7 +14,10 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { getInstalledApps, addToInstalledApps } from "../../utilities/installApp";
+import {
+  getInstalledApps,
+  addToInstalledApps,
+} from "../../utilities/installApp";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -24,38 +27,57 @@ const AppDetails = () => {
 
   return (
     <div className="m-20">
-      <div className="flex gap-10">
-        <img src={singleApp.image} alt="" className="w-90 h-auto" />
+      <div className="flex gap-10 flex-col md:flex-row">
+        <img src={singleApp.image} alt="" className="w-90 h-90" />
         <div className="flex flex-col gap-8 w-full">
           <div className="">
-            <h1>{singleApp.title}</h1>
-            <p>Developed by {singleApp.companyName}</p>
+            <h1 className="text-[32px] font-bold text-[#001931]">
+              {singleApp.title}
+            </h1>
+            <p className="text-[20px] font-normal">
+              Developed by{" "}
+              <span className="text-[20px] font-semibold bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">
+                {singleApp.companyName}
+              </span>
+            </p>
           </div>
           <hr></hr>
           <div className="flex gap-20">
             <div className="flex flex-col gap-2">
               <img src={downloadIcon} alt="" className="w-10" />
-              <p>Downloads</p>
-              <strong>{singleApp.downloads}</strong>
+              <p className="text-[16px] font-normal">Downloads</p>
+              <strong className="text-[40px] font-extrabold">
+                {singleApp.downloads}
+              </strong>
             </div>
             <div className="flex flex-col  gap-2">
               <img src={ratingIcon} alt="" className="w-10"></img>
-              <p>Average Ratings</p>
-              <strong>{singleApp.ratingAvg}</strong>
+              <p className="text-[16px] font-normal">Average Ratings</p>
+              <strong className="text-[40px] font-extrabold">
+                {singleApp.ratingAvg}
+              </strong>
             </div>
             <div className="flex flex-col  gap-2">
               <img src={reviewIcon} alt="" className="w-10" />
-              <p>Total Reviews</p>
-              <strong>{singleApp.reviews}</strong>
+              <p className="text-[16px] font-normal">Total Reviews</p>
+              <strong className="text-[40px] font-extrabold">
+                {singleApp.reviews}
+              </strong>
             </div>
           </div>
-          <button onClick={() => {addToInstalledApps(singleApp.id)}} className="bg-[#00D390] text-white py-4 px-5 w-60 cursor-pointer active:scale-95 transition-transform duration-100">
+          <button
+            onClick={() => {
+              addToInstalledApps(singleApp.id);
+            }}
+            className="bg-[#00D390] text-white py-4 px-5 w-60 cursor-pointer active:scale-95 transition-transform duration-100 text-[20px] font-semibold"
+          >
             Install Now ({singleApp.size} MB)
           </button>
         </div>
       </div>
       <hr className="my-10" />
       <div>
+        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">Ratings</h2>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
             data={[...singleApp.ratings].reverse().map((rating) => ({
@@ -89,8 +111,8 @@ const AppDetails = () => {
       </div>
       <hr className="my-10" />
       <div>
-        <h2>Description</h2>
-        <p>{singleApp.description}</p>
+        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">Description</h2>
+        <p className="text-[20px] font-normal text-[#627382]">{singleApp.description}</p>
       </div>
     </div>
   );

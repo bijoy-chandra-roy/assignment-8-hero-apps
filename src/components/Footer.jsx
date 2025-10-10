@@ -108,11 +108,11 @@ const Footer = () => {
           <h6 className="font-bold text-lg mb-3">Newsletter</h6>
           <div className="flex flex-col gap-2">
             <label className="text-sm">Enter your email address</label>
-            <div className="flex flex-col sm:flex-row gap-2">
+            <div className="flex flex-col lg:flex-row gap-2">
               <input
                 type="email"
                 placeholder="username@site.com"
-                className="input input-bordered flex-1"
+                className="input input-bordered flex-1 w-full py-2 placeholder-black dark:placeholder-white"
               />
               <button className="btn btn-primary">Subscribe</button>
             </div>
