@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import Cards from "./../../components/Cards";
+import AppNotFound from "./AppNotFound";
 
 const AppsPage = () => {
   const data = useLoaderData();
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredApps = data.filter(app =>
+    app.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="text-center m-20">
       <h1 className="text-[48px] font-bold text-[#001931]">
@@ -12,9 +19,10 @@ const AppsPage = () => {
       <p className="text-[20px] font-normal text-[#627382]">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
-      <div className="flex justify-between">
+
+      <div className="flex justify-between mb-6">
         <div className="text-[24px] font-semibold text-[#001931]">
-          <p>({Object.keys(data).length}) Apps Found</p>
+          <p>({filteredApps.length}) Apps Found</p>
         </div>
         <label className="input">
           <svg
@@ -33,10 +41,20 @@ const AppsPage = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" required placeholder="Search" />
+          <input
+            type="search"
+            placeholder="Search"
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+          />
         </label>
       </div>
-      <Cards data={data}></Cards>
+
+      {filteredApps.length > 0 ? (
+        <Cards data={filteredApps} />
+      ) : (
+        <AppNotFound />
+      )}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
@@ -24,6 +24,8 @@ const AppDetails = () => {
   const appID = parseInt(id);
   const data = useLoaderData();
   const singleApp = data.find((app) => app.id === appID);
+  const [installedApps, setInstalledApps] = useState(getInstalledApps());
+  const isInstalled = installedApps.includes(singleApp.id);
 
   return (
     <div className="m-20">
@@ -67,17 +69,26 @@ const AppDetails = () => {
           </div>
           <button
             onClick={() => {
-              addToInstalledApps(singleApp.id);
+              addToInstalledApps(singleApp.id); // this will handle toast internally
+              if (!isInstalled) {
+                setInstalledApps(getInstalledApps());
+              }
             }}
-            className="bg-[#00D390] text-white py-4 px-5 w-60 cursor-pointer active:scale-95 transition-transform duration-100 text-[20px] font-semibold"
+            className={`py-4 px-5 w-60 text-[20px] font-semibold transition-transform duration-100 ${
+              isInstalled
+                ? "bg-gray-400 text-white cursor-default"
+                : "bg-[#00D390] text-white cursor-pointer active:scale-95"
+            }`}
           >
-            Install Now ({singleApp.size} MB)
+            {isInstalled ? "Installed" : `Install Now (${singleApp.size} MB)`}
           </button>
         </div>
       </div>
       <hr className="my-10" />
       <div>
-        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">Ratings</h2>
+        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">
+          Ratings
+        </h2>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
             data={[...singleApp.ratings].reverse().map((rating) => ({
@@ -111,8 +122,12 @@ const AppDetails = () => {
       </div>
       <hr className="my-10" />
       <div>
-        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">Description</h2>
-        <p className="text-[20px] font-normal text-[#627382]">{singleApp.description}</p>
+        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">
+          Description
+        </h2>
+        <p className="text-[20px] font-normal text-[#627382]">
+          {singleApp.description}
+        </p>
       </div>
     </div>
   );

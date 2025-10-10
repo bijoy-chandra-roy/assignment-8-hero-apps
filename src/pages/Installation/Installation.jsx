@@ -2,17 +2,40 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getInstalledApps } from "../../utilities/installApp";
 import List from "./../../components/List";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const data = useLoaderData();
-
   const [installedAppsList, setInstalledAppsList] = useState([]);
+  const handleUninstall = (id) => {
+    const installedApps = getInstalledApps().filter((appId) => appId !== id);
+    localStorage.setItem("installedApps", JSON.stringify(installedApps));
+    const updatedList = installedAppsList.filter((app) => app.id !== id);
+    setInstalledAppsList(updatedList);
+    toast.success("App uninstalled successfully");
+  };
 
   useEffect(() => {
     const storedApps = getInstalledApps().map((id) => parseInt(id));
     const myInstalledApps = data.filter((app) => storedApps.includes(app.id));
     setInstalledAppsList(myInstalledApps);
   }, []);
+
+  const handleSort = (e) => {
+    const option = e.target.value;
+    const sortedList = [...installedAppsList];
+
+    if (option === "Rating") {
+      sortedList.sort((a, b) => b.ratingAvg - a.ratingAvg);
+    } else if (option === "Downloads") {
+      sortedList.sort((a, b) => b.downloads - a.downloads);
+    } else if (option === "App Size") {
+      sortedList.sort((a, b) => a.size - b.size);
+    }
+
+    setInstalledAppsList(sortedList);
+  };
+
   return (
     <div className="text-center m-20">
       <div>
@@ -27,19 +50,18 @@ const Installation = () => {
         <div className="text-[24px] font-semibold text-[#001931]">
           <p>({installedAppsList.length}) Apps Found</p>
         </div>
-        <select className="select">
+        <select className="select" onChange={handleSort}>
           <option hidden>Sort by</option>
           <option>Rating</option>
           <option>Downloads</option>
-          <option>Reviews</option>
           <option>App Size</option>
-          <option>Title</option>
-          <option>Company Name</option>
-          <option>Newest First</option>
         </select>
       </div>
       <div className="">
-        <List installedAppsList={installedAppsList}></List>
+        <List
+          installedAppsList={installedAppsList}
+          onUninstall={handleUninstall}
+        ></List>
       </div>
     </div>
   );

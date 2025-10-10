@@ -1,12 +1,16 @@
 import React, { Suspense } from "react";
 import Item from "./Item";
 
-const List = ({installedAppsList}) => {
+const List = ({ installedAppsList, onUninstall }) => {
   return (
     <div className="flex flex-col gap-4">
       <Suspense fallback={<span>Loading....</span>}>
         {installedAppsList.map((eachApp) => (
-          <Item key={eachApp.id} eachApp={eachApp}></Item>
+          <Item
+            key={eachApp.id}
+            eachApp={eachApp}
+            onUninstall={onUninstall}
+          ></Item>
         ))}
       </Suspense>
     </div>
