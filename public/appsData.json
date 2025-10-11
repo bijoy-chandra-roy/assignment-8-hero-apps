@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://picsum.photos/id/212/200/200",
+    "image": "/images/photo-gallery-pro.jpeg",
     "title": "Photo Gallery Pro",
     "companyName": "Visual Innovators Inc.",
     "description": "A high-performance photo gallery app for organizing and editing your memories with smart AI features.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "https://picsum.photos/id/343/200/200",
+    "image": "/images/cosmic-adventures-game.jpeg",
     "title": "Cosmic Adventures Game",
     "companyName": "Starlight Studios",
     "description": "An action-packed arcade game where you navigate through space, collecting stars and dodging meteors.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "/images/demo-app (5).webp",
+    "image": "/images/demo-app (6).webp ",
     "title": "Budget Planner",
     "companyName": "Financial Tools Ltd.",
     "description": "Manage your finances effortlessly. Track expenses, set budgets, and achieve your financial goals with ease.",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "image": "https://picsum.photos/id/88/200/200",
+    "image": "/images/recipe-finder.jpeg",
     "title": "Recipe Finder",
     "companyName": "Gourmet Apps",
     "description": "Discover thousands of recipes for every occasion. Filter by ingredients, cuisine, and dietary needs.",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "image": "https://picsum.photos/id/400/200/200",
+    "image": "/images/weather-live.jpeg",
     "title": "Weather Live",
     "companyName": "ClimaTech Systems",
     "description": "Get real-time weather forecasts, radar maps, and severe weather alerts for your current location.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "/images/demo-app (6).webp",
+    "image": "/images/demo-app (5).webp",
     "title": "Language Learner",
     "companyName": "Lingua Masters",
     "description": "Learn a new language with interactive lessons, vocabulary builders, and quizzes. Supports multiple languages.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "https://picsum.photos/id/29/200/200",
+    "image": "/images/productivity-hub.jpeg",
     "title": "Productivity Hub",
     "companyName": "Synergy Software",
     "description": "An all-in-one productivity app with task management, a calendar, and project collaboration features.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 10,
-    "image": "https://picsum.photos/id/350/200/200",
+    "image": "/images/music-mixer.jpeg",
     "title": "Music Mixer",
     "companyName": "Audio Creations",
     "description": "Create, mix, and share your own music tracks with a wide range of instruments and sound effects.",
@@ -181,7 +181,7 @@
   },
   {
     "id": 11,
-    "image": "https://picsum.photos/id/222/200/200",
+    "image": "/images/home-decorator.jpeg",
     "title": "Home Decorator",
     "companyName": "Design Studios",
     "description": "Visualize how new furniture and paint colors will look in your home using augmented reality.",
@@ -217,7 +217,7 @@
   },
   {
     "id": 13,
-    "image": "https://picsum.photos/id/287/200/200",
+    "image": "/images/puzzle-mania.jpeg",
     "title": "Puzzle Mania",
     "companyName": "Brainy Games Ltd.",
     "description": "A collection of challenging and mind-bending puzzles to test your logic and problem-solving skills.",
@@ -235,7 +235,7 @@
   },
   {
     "id": 14,
-    "image": "https://picsum.photos/id/115/200/200",
+    "image": "/images/cooking-master.jpeg",
     "title": "Cooking Master",
     "companyName": "Tasty Creations",
     "description": "Learn to cook like a pro with video tutorials, step-by-step guides, and a list of your favorite recipes.",
@@ -253,7 +253,7 @@
   },
   {
     "id": 15,
-    "image": "https://picsum.photos/id/44/200/200",
+    "image": "/images/book-reader.jpeg",
     "title": "Book Reader",
     "companyName": "Literary Labs",
     "description": "A feature-rich ebook reader with a customizable interface, note-taking, and cloud sync.",
@@ -271,7 +271,7 @@
   },
   {
     "id": 16,
-    "image": "https://picsum.photos/id/16/200/200",
+    "image": "/images/news-aggregator.jpeg",
     "title": "News Aggregator",
     "companyName": "InfoStream Media",
     "description": "Stay updated with the latest news from multiple sources, personalized feeds, and offline reading.",
@@ -289,7 +289,7 @@
   },
   {
     "id": 17,
-    "image": "https://picsum.photos/id/17/200/200",
+    "image": "/images/habit-builder.jpeg",
     "title": "Habit Builder",
     "companyName": "Daily Routines Inc.",
     "description": "Build positive habits with reminders, progress tracking, and motivational quotes to keep you on track.",
@@ -307,7 +307,7 @@
   },
   {
     "id": 18,
-    "image": "https://picsum.photos/id/18/200/200",
+    "image": "/images/virtual-pet-simulator.jpeg",
     "title": "Virtual Pet Simulator",
     "companyName": "Fun Pets Games",
     "description": "Adopt and care for virtual pets, play mini-games, and customize their habitats in this fun simulator.",
@@ -325,7 +325,7 @@
   },
   {
     "id": 19,
-    "image": "https://picsum.photos/id/19/200/200",
+    "image": "/images/stock-market-tracker.jpeg",
     "title": "Stock Market Tracker",
     "companyName": "Finance Insights",
     "description": "Monitor stock prices, analyze trends, and get alerts for market changes with real-time data.",

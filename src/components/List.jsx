@@ -3,7 +3,7 @@ import Item from "./Item";
 
 const List = ({ installedAppsList, onUninstall }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 mt-4">
       <Suspense fallback={<span>Loading....</span>}>
         {installedAppsList.map((eachApp) => (
           <Item

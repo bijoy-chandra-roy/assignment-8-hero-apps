@@ -39,15 +39,15 @@ const Installation = () => {
   return (
     <div className="text-center m-20">
       <div>
-        <h1 className="text-[48px] font-bold text-[#001931]">
+        <h1 className="text-[48px] font-bold text-[#001931] dark:text-white">
           Your Installed Apps
         </h1>
-        <p className="text-[20px] font-normal text-[#627382]">
+        <p className="text-[20px] font-normal text-[#627382] mb-10">
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
       <div className="flex justify-between">
-        <div className="text-[24px] font-semibold text-[#001931]">
+        <div className="text-[24px] font-semibold text-[#001931] dark:text-white">
           <p>({installedAppsList.length}) Apps Found</p>
         </div>
         <select className="select" onChange={handleSort}>

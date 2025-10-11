@@ -33,7 +33,7 @@ const AppDetails = () => {
         <img src={singleApp.image} alt="" className="w-90 h-90" />
         <div className="flex flex-col gap-8 w-full">
           <div className="">
-            <h1 className="text-[32px] font-bold text-[#001931]">
+            <h1 className="text-[32px] font-bold text-[#001931] dark:text-white">
               {singleApp.title}
             </h1>
             <p className="text-[20px] font-normal">
@@ -86,7 +86,7 @@ const AppDetails = () => {
       </div>
       <hr className="my-10" />
       <div>
-        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">
+        <h2 className="text-[24px] font-semibold text-[#001931] mb-6 dark:text-white">
           Ratings
         </h2>
         <ResponsiveContainer width="100%" height={300}>
@@ -122,7 +122,7 @@ const AppDetails = () => {
       </div>
       <hr className="my-10" />
       <div>
-        <h2 className="text-[24px] font-semibold text-[#001931] mb-6">
+        <h2 className="text-[24px] font-semibold text-[#001931] mb-6 dark:text-white">
           Description
         </h2>
         <p className="text-[20px] font-normal text-[#627382]">

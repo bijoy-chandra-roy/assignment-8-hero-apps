@@ -9,7 +9,7 @@ const PageNotFound = () => {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <img src={error404} alt="" />
       <div className="text-center flex flex-col gap-2 my-4">
-        <h1 className="text-[48px] font-semibold  text-black">
+        <h1 className="text-[48px] font-semibold  text-black dark:text-white">
           Oops, page not found!
         </h1>
         <p className="text-[20px] font-normal text-[#627382]">

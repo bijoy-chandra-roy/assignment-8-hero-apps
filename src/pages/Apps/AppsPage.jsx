@@ -7,21 +7,21 @@ const AppsPage = () => {
   const data = useLoaderData();
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredApps = data.filter(app =>
+  const filteredApps = data.filter((app) =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="text-center m-20">
-      <h1 className="text-[48px] font-bold text-[#001931]">
+      <h1 className="text-[48px] font-bold text-[#001931] dark:text-white">
         Our All Applications
       </h1>
-      <p className="text-[20px] font-normal text-[#627382]">
+      <p className="text-[20px] font-normal text-[#627382] mb-10">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
       <div className="flex justify-between mb-6">
-        <div className="text-[24px] font-semibold text-[#001931]">
+        <div className="text-[24px] font-semibold text-[#001931] dark:text-white">
           <p>({filteredApps.length}) Apps Found</p>
         </div>
         <label className="input">
@@ -45,7 +45,7 @@ const AppsPage = () => {
             type="search"
             placeholder="Search"
             value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </label>
       </div>

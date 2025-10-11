@@ -12,7 +12,7 @@ const Navbar = () => {
         className={`text-[16px] font-medium ${
           isActive
             ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3]"
-            : "text-[#000000]"
+            : "text-[#000000] dark:text-white"
         }`}
       >
         Home
@@ -26,7 +26,7 @@ const Navbar = () => {
         className={`text-[16px] font-medium ${
           isActive
             ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3]"
-            : "text-[#000000]"
+            : "text-[#000000] dark:text-white"
         }`}
       >
         Apps
@@ -40,7 +40,7 @@ const Navbar = () => {
         className={`text-[16px] font-medium ${
           isActive
             ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3]"
-            : "text-[#000000]"
+            : "text-[#000000] dark:text-white"
         }`}
       >
         Installation

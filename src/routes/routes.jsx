@@ -17,23 +17,23 @@ export const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        loader: () => fetch("appsData.json").then(res => res.json()),
+        loader: () => fetch("/appsData.json").then(res => res.json()),
         Component: Home,
       },
       {
         path: "/apps",
-        loader: () => fetch("appsData.json").then(res => res.json()),
+        loader: () => fetch("/appsData.json").then(res => res.json()),
         Component: AppsPage,
         errorElement: <AppNotFound />,
       },
       {
         path: "/installation",
-        loader: () => fetch("appsData.json").then(res => res.json()),
+        loader: () => fetch("/appsData.json").then(res => res.json()),
         Component: Installation,
       },
       {
         path: "/appdetails/:id",
-        loader: () => fetch("appsData.json").then(res => res.json()),
+        loader: () => fetch("/appsData.json").then(res => res.json()),
         Component: AppDetails,
       },
     ],

@@ -22,14 +22,21 @@ const Banner = () => {
               ideas into digital experiences that truly make an impact.
             </p>
             <div className="my-10 flex gap-4 justify-center">
-              <button className="btn btn-neutral btn-outline">
-                <img src={playStore} alt="" className="h-8/12" />
-                Google Play
-              </button>
-              <button className="btn btn-neutral btn-outline">
-                <img src={appStore} alt="" className="h-8/12" />
-                App Store
-              </button>
+              <a
+                href="https://play.google.com/store/apps?hl=en"
+                target="_blank"
+              >
+                <button className="btn btn-neutral btn-outline dark:text-white">
+                  <img src={playStore} alt="" className="h-8/12" />
+                  Google Play
+                </button>
+              </a>
+              <a href="https://www.apple.com/app-store/" target="_blank">
+                <button className="btn btn-neutral btn-outline dark:text-white">
+                  <img src={appStore} alt="" className="h-8/12" />
+                  App Store
+                </button>
+              </a>
             </div>
           </div>
         </div>

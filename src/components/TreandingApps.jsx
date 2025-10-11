@@ -8,7 +8,7 @@ const TreandingApps = ({ data }) => {
     .slice(0, 8);
   return (
     <div className="my-20">
-      <h2 className="text-[48px] font-bold text-[#001931]">Trending Apps</h2>
+      <h2 className="text-[48px] font-bold text-[#001931] dark:text-white">Trending Apps</h2>
       <p className="text-[20px] font-normal text-[#627382]">Explore All Trending Apps on the Market developed by us</p>
       <Cards data={topRated}></Cards>
       <Link

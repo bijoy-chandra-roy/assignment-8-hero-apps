@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-*{
-    font-family: "Inter", sans-serif;
+* {
+  font-family: "Inter", sans-serif;
+}
+hr {
+  border-color: #627382;
 }

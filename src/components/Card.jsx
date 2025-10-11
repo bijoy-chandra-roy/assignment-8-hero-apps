@@ -17,13 +17,13 @@ const Card = ({ eachApp }) => {
           </Suspense>
         </figure>
         <div className="card-body px-0">
-          <h2 className="card-title text-[20px] font-medium text-[#001931]">{eachApp.title}</h2>
+          <h2 className="card-title text-[20px] font-medium text-[#001931] dark:text-white">{eachApp.title}</h2>
           <div className="card-actions justify-between">
-            <div className="badge badge-outline text-[#00D390] bg-[#F1F5E8] rounded-[4px] border-none">
+            <div className="badge badge-outline text-[#00D390] bg-[#F1F5E8] dark:text-[#F1F5E8] dark:bg-[#00D390] rounded-[4px] border-none">
               <MdOutlineFileDownload />
               {eachApp.downloads}
             </div>
-            <div className="badge badge-outline text-[#FF8811] bg-[#FFF0E1] rounded-[4px] border-none">
+            <div className="badge badge-outline text-[#FF8811] bg-[#FFF0E1] dark:text-[#FFF0E1] dark:bg-[#FF8811] rounded-[4px] border-none">
               {eachApp.ratingAvg === 5 ? (
                 <FaStar />
               ) : eachApp.ratingAvg > 1 ? (
