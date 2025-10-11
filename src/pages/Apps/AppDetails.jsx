@@ -18,6 +18,7 @@ import {
   getInstalledApps,
   addToInstalledApps,
 } from "../../utilities/installApp";
+import { convertCountToNumber } from "../../utilities/convertCountToNumber";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -93,12 +94,7 @@ const AppDetails = () => {
           <BarChart
             data={[...singleApp.ratings].reverse().map((rating) => ({
               name: rating.name,
-              count:
-                typeof rating.count === "string"
-                  ? rating.count.includes("M")
-                    ? parseFloat(rating.count.replace("M", "")) * 1000000
-                    : parseFloat(rating.count.replace("K", "")) * 1000
-                  : rating.count,
+              count: convertCountToNumber(rating.count),
             }))}
             layout="vertical"
             // margin={{
