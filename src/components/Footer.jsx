@@ -8,7 +8,7 @@ const Footer = () => {
         <aside className="flex flex-col items-start gap-4 flex-1">
           <img src={logo} alt="" className="w-[50px] h-auto" />
           <p className="text-sm md:text-base">
-            HERO.IO
+            HERO Apps
             <br />
             Providing reliable apps since 2022
           </p>

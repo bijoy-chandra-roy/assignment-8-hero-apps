@@ -81,7 +81,7 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost text-xl" href="/">
           <img src={logo} alt="" className="h-full" />
-          HERO.IO
+          HERO Apps
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
