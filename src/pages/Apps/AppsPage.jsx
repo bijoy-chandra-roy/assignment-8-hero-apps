@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { useLoaderData } from "react-router";
 import Cards from "./../../components/Cards";
 import AppNotFound from "./AppNotFound";
@@ -51,7 +51,11 @@ const AppsPage = () => {
       </div>
 
       {filteredApps.length > 0 ? (
-        <Cards data={filteredApps} />
+        <Suspense
+          fallback={<span className="loading loading-dots loading-xl"></span>}
+        >
+          <Cards data={filteredApps} />
+        </Suspense>
       ) : (
         <AppNotFound />
       )}
