@@ -31,7 +31,7 @@ const AppDetails = () => {
   return (
     <div className="m-20">
       <div className="flex gap-10 flex-col md:flex-row">
-        <div className="w-64 md:w-80 flex-shrink-0">
+        <div className="w-64 md:w-95 flex-shrink-0">
           <img
             src={singleApp.image}
             alt=""
