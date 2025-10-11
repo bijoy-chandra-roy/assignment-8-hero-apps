@@ -23,26 +23,35 @@ const Installation = () => {
   }, []);
 
   const handleSort = (e) => {
-  const option = e.target.value;
-  let sortedList = [...installedAppsList];
+    const option = e.target.value;
+    let sortedList = [...installedAppsList];
 
-  if (option === "Rating") {
-    sortedList = [...installedAppsList].sort((a, b) => b.ratingAvg - a.ratingAvg);
-  } else if (option === "Downloads High-Low") {
-    sortedList = [...installedAppsList].sort(
-      (a, b) => convertCountToNumber(b.downloads) - convertCountToNumber(a.downloads)
-    );
-  } else if (option === "Downloads Low-High") {
-    sortedList = [...installedAppsList].sort(
-      (a, b) => convertCountToNumber(a.downloads) - convertCountToNumber(b.downloads)
-    );
-  } else if (option === "App Size") {
-    sortedList = [...installedAppsList].sort((a, b) => a.size - b.size);
-  }
+    if (option === "Rating High-Low") {
+      sortedList = [...installedAppsList].sort(
+        (a, b) => b.ratingAvg - a.ratingAvg
+      );
+    } else if (option === "Rating Low-High") {
+      sortedList = [...installedAppsList].sort(
+        (a, b) => a.ratingAvg - b.ratingAvg
+      );
+    } else if (option === "Downloads High-Low") {
+      sortedList = [...installedAppsList].sort(
+        (a, b) =>
+          convertCountToNumber(b.downloads) - convertCountToNumber(a.downloads)
+      );
+    } else if (option === "Downloads Low-High") {
+      sortedList = [...installedAppsList].sort(
+        (a, b) =>
+          convertCountToNumber(a.downloads) - convertCountToNumber(b.downloads)
+      );
+    } else if (option === "App Size High-Low") {
+      sortedList = [...installedAppsList].sort((a, b) => b.size - a.size);
+    } else if (option === "App Size Low-High") {
+      sortedList = [...installedAppsList].sort((a, b) => a.size - b.size);
+    }
 
-  setInstalledAppsList(sortedList);
-};
-
+    setInstalledAppsList(sortedList);
+  };
 
   return (
     <div className="text-center m-20">
@@ -60,10 +69,14 @@ const Installation = () => {
         </div>
         <select className="select" onChange={handleSort}>
           <option hidden>Sort by</option>
-          <option>Rating</option>
+          <option>Rating High-Low</option>
+          <option>Rating Low-High</option>
+
           <option>Downloads High-Low</option>
           <option>Downloads Low-High</option>
-          <option>App Size</option>
+
+          <option>App Size High-Low</option>
+          <option>App Size Low-High</option>
         </select>
       </div>
       <div className="">
