@@ -80,7 +80,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl" href="/">
-          <img src={logo} alt="" className="h-full" />
+          <img src={logo} alt="" className="h-full hover:animate-spin"  style={{ transformOrigin: "37.4% 50%" }}/>
           HERO Apps
         </a>
       </div>

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-[#001931] text-white w-full">
       <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-4 p-8 md:p-10">
         <aside className="flex flex-col items-start gap-4 flex-1">
-          <img src={logo} alt="" className="w-[50px] h-auto" />
+          <img src={logo} alt="" className="w-[50px] h-auto hover:animate-spin" style={{ transformOrigin: "37.4% 50%" }}/>
           <p className="text-sm md:text-base">
             HERO Apps
             <br />
